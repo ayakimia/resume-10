@@ -1,0 +1,17 @@
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 24px; color: #192b35; background: #eff3f3; font: 17px/1.55 Arial, sans-serif; }
+main { max-width: 760px; margin: 24px auto; background: white; }
+header, section { padding: 24px 32px; }
+header { background: #d9f2dc; }
+section + section { border-top: 1px solid #d5dcde; }
+h1, h2, h3, p { margin: 0 0 12px; }
+h1 { line-height: 1.15; }
+h3 { font-size: 1.05rem; }
+
+@media print {
+  body { padding: 0; background: white; color: black; }
+  main { max-width: none; margin: 0; }
+  header, section { padding: 10pt 0; }
+  h2, h3 { break-after: avoid; }
+}
